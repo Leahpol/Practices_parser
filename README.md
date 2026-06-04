@@ -1,14 +1,14 @@
-## Creating a Clean Python Environment with uv
+# Creating a Clean Python Environment with uv
 curl -LsSf https://astral.sh/uv/install.sh | sh 
 
 
-# Create a virtual environment with Python 3.11
+### Create a virtual environment with Python 3.11
 uv venv --python 3.11
 
-# Activate it
+### Activate it
 source .venv/bin/activate  
 
-## Libraries
+# Libraries
 
-# install libraries
+## install libraries
 uv pip install pdfplumber pymupdf pypdf -q
