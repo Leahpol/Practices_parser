@@ -49,12 +49,13 @@ def display_results(filename, word_count, word_count_no_punctuation, line_count)
 def save_to_csv(data, output_file="results.csv"):
     import csv
     import os
-    # a for append, adds new roe to results instead of override
+    # 'a' for append, adds new row to results instead of override
     with open(output_file, 'a', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(["Filename", "Word Count", "Word Count (No Punctuation)", "Line Count"])
         for row in data:
             writer.writerow(row)
+
 def analyze_pdf(filename):
     '''main function to analyze pdf text'''
     print(f"Analyzing '{filename}'...")
